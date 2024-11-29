@@ -8,6 +8,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <main class="main bg-[url('/imgs/main_img.png')]">
@@ -15,8 +19,14 @@
       <header class="header p-[30px]">
         <div class="container flex items-center justify-between">
           <!-- header_left started -->
-          <div class="header_left flex items-center gap-[30px]">
-            <img src="./svgs/header_icon.svg" alt="" />
+          <div
+            class="header_left flex items-center gap-[30px] max-[1155px]:justify-between"
+          >
+            <img
+              class="max-[340px]:w-[40%]"
+              src="./svgs/header_icon.svg"
+              alt=""
+            />
 
             <img src="./svgs/header_border.svg" alt="" />
             <div class="catalog_main flex items-center gap-[10px]">
@@ -30,8 +40,19 @@
           <!-- header_left ended -->
 
           <!-- header_right started -->
-          <div class="header_right flex items-center gap-[30px]">
-            <div class="header_info flex items-center gap-[30px]">
+          <div
+            class="header_right flex items-center gap-[30px] max-[1155px]:justify-between max-[1155px]:items-start"
+          >
+            <div class="menu1">
+              <label for="check1"
+                ><i class="fa-solid fa-bars text-white font-[50px]"></i>
+              </label>
+            </div>
+
+            <input type="checkbox" id="check1" class="hidden" />
+            <div
+              class="header_info flex items-center gap-[30px] max-[750px]:hidden"
+            >
               <div class="location flex items-center gap-[10px]">
                 <img src="./svgs/location.svg" alt="" />
                 <p class="font-[600] text-[16px] text-white">г. Москва</p>
@@ -56,9 +77,11 @@
               </div>
             </div>
 
-            <div class="header_icons flex items-center gap-[30px]">
-              <img src="./svgs/h1.svg" alt="" />
-              <img src="./svgs/h2.svg" alt="" />
+            <div
+              class="header_icons flex items-center gap-[30px] max-[1155px]:justify-between max-[1155px]:items-start"
+            >
+              <img class="max-[750px]:hidden" src="./svgs/h1.svg" alt="" />
+              <img class="max-[750px]:hidden" src="./svgs/h2.svg" alt="" />
               <img src="./svgs/h3.svg" alt="" />
             </div>
           </div>
@@ -70,11 +93,13 @@
       <!-- showcase started -->
       <section class="showcase mt-[120px]">
         <div class="container flex flex-col items-center">
-          <h1 class="font-[600] text-[44px] text-white">
+          <h1 class="font-[600] text-[44px] text-white max-[435px]:text-[30px]">
             Крупнейший маркетплейс ЖБИ
           </h1>
           <!-- showcase top cards -->
-          <div class="showcase_cards flex items-center gap-[40px] mt-[50px]">
+          <div
+            class="showcase_cards flex items-center gap-[40px] mt-[50px] max-[420px]:w-[200px]"
+          >
             <h1
               class="font-[600] text-[18px] text-white border-b border-dashed w-fit"
             >
@@ -204,8 +229,14 @@
         <!-- all_links_HEADER started -->
         <div class="all_links_header flex items-center justify-between">
           <!-- header_left started -->
-          <div class="header_left flex items-center gap-[30px]">
-            <img src="./svgs/header_icon.svg" alt="" />
+          <div
+            class="header_left flex items-center gap-[30px] max-[1155px]:justify-between"
+          >
+            <img
+              class="max-[340px]:w-[40%]"
+              src="./svgs/header_icon.svg"
+              alt=""
+            />
 
             <img src="./svgs/header_border.svg" alt="" />
             <div class="catalog_main flex items-center gap-[10px]">
@@ -219,8 +250,19 @@
           <!-- header_left ended -->
 
           <!-- header_right started -->
-          <div class="header_right flex items-center gap-[30px]">
-            <div class="header_info flex items-center gap-[30px]">
+          <div
+            class="header_right flex items-center gap-[30px] max-[1155px]:justify-between max-[1155px]:items-start"
+          >
+            <div class="menu1">
+              <label for="check1"
+                ><i class="fa-solid fa-bars text-black font-[50px]"></i>
+              </label>
+            </div>
+
+            <input type="checkbox" id="check1" class="hidden" />
+            <div
+              class="header_info flex items-center gap-[30px] max-[750px]:hidden"
+            >
               <div class="location flex items-center gap-[10px]">
                 <img class="svgb" src="./svgs/location.svg" alt="" />
                 <p class="font-[600] text-[16px] text-black">г. Москва</p>
@@ -245,9 +287,16 @@
               </div>
             </div>
 
-            <div class="header_icons flex items-center gap-[30px]">
-              <img class="svgb" src="./svgs/h1.svg" alt="" />
-              <img class="svgb" src="./svgs/h2.svg" alt="" />
+            <div
+              class="header_icons flex items-center gap-[30px] max-[1155px]:justify-between max-[1155px]:items-start"
+            >
+              <img
+                class="svgb"
+                class="max-[750px]:hidden"
+                src="./svgs/h1.svg"
+                alt=""
+              />
+              <img class="max-[750px]:hidden" src="./svgs/h2.svg" alt="" />
               <img class="svgb" src="./svgs/h3.svg" alt="" />
             </div>
           </div>
@@ -256,7 +305,9 @@
         <!-- all_links_HEADER ended -->
 
         <!-- main_links grid -->
-        <div class="main_links grid grid-cols-3 gap-[30px] mt-[60px]">
+        <div
+          class="main_links grid grid-cols-3 gap-[30px] mt-[60px] max-[770px]:grid-cols-2 max-[555px]:grid-cols-1"
+        >
           <!-- links1 -->
           <div class="main_link1">
             <h3 class="font-[600] text-[18px] text-[#ec0d0d]">
@@ -421,7 +472,9 @@
         <!-- main_links grid ended -->
 
         <!-- bottom_links -->
-        <div class="bottom_links flex items-center justify-between mt-[60px]">
+        <div
+          class="bottom_links grid mt-[60px] grid-cols-6 gap-[40px] max-[1460px]:grid-cols-3 max-[650px]:grid-cols-2 max-[555px]:grid-cols-1"
+        >
           <!-- l1 -->
           <div class="l1 flex items-center gap-[10px]">
             <img src="./svgs/l1.svg" alt="" />
@@ -483,10 +536,16 @@
     <section class="last_section bg-[url(/imgs/main2.png)] p-[30px]">
       <div class="container">
         <!-- header_part started -->
-        <div class="header_part  flex items-center justify-between">
+        <div class="header_part flex items-center justify-between">
           <!-- header_left started -->
-          <div class="header_left flex items-center gap-[30px]">
-            <img src="./svgs/header_icon.svg" alt="" />
+          <div
+            class="header_left flex items-center gap-[30px] max-[1155px]:justify-between"
+          >
+            <img
+              class="max-[340px]:w-[40%]"
+              src="./svgs/header_icon.svg"
+              alt=""
+            />
 
             <img src="./svgs/header_border.svg" alt="" />
             <div class="catalog_main flex items-center gap-[10px]">
@@ -500,8 +559,19 @@
           <!-- header_left ended -->
 
           <!-- header_right started -->
-          <div class="header_right flex items-center gap-[30px]">
-            <div class="header_info flex items-center gap-[30px]">
+          <div
+            class="header_right flex items-center gap-[30px] max-[1155px]:justify-between max-[1155px]:items-start"
+          >
+            <div class="menu1">
+              <label for="check1"
+                ><i class="fa-solid fa-bars text-white font-[50px]"></i>
+              </label>
+            </div>
+
+            <input type="checkbox" id="check1" class="hidden" />
+            <div
+              class="header_info flex items-center gap-[30px] max-[750px]:hidden"
+            >
               <div class="location flex items-center gap-[10px]">
                 <img src="./svgs/location.svg" alt="" />
                 <p class="font-[600] text-[16px] text-white">г. Москва</p>
@@ -526,9 +596,11 @@
               </div>
             </div>
 
-            <div class="header_icons flex items-center gap-[30px]">
-              <img src="./svgs/h1.svg" alt="" />
-              <img src="./svgs/h2.svg" alt="" />
+            <div
+              class="header_icons flex items-center gap-[30px] max-[1155px]:justify-between max-[1155px]:items-start"
+            >
+              <img class="max-[750px]:hidden" src="./svgs/h1.svg" alt="" />
+              <img class="max-[750px]:hidden" src="./svgs/h2.svg" alt="" />
               <img src="./svgs/h3.svg" alt="" />
             </div>
           </div>
@@ -537,17 +609,78 @@
         <!-- header_part ended -->
 
         <!-- section_grid started -->
-         <div class="section_grid">
+        <div class="section_grid flex items-center flex-col mt-[60px] max-[855px]:grid-cols-2 max-[600px]:grid-cols-1">
           <h1 class="font-[600] text-[36px] text-[white]">Производство</h1>
-          <div class="pics">
-            
+          <div class="pics mt-[35px] grid grid-cols-3 gap-[35px]">
+            <!-- pic1 -->
+            <div class="pic1 flex flex-col items-center gap-[10px]">
+              <img src="./imgs/p1.png" alt="" />
+              <h1 class="font-[700] text-[18px] text-[white]">
+                Производство Москва
+              </h1>
+            </div>
+            <!-- pic2 -->
+            <div class="pic1 flex flex-col items-center gap-[10px]">
+              <img src="./imgs/p2.png" alt="" />
+              <h1 class="font-[700] text-[18px] text-[white]">
+                Производство Москва
+              </h1>
+            </div>
+            <!-- pic3 -->
+            <div class="pic1 flex flex-col items-center gap-[10px]">
+              <img src="./imgs/p3.png" alt="" />
+              <h1 class="font-[700] text-[18px] text-[white]">
+                Производство Москва
+              </h1>
+            </div>
+            <!-- pic4 -->
+            <div class="pic1 flex flex-col items-center gap-[10px]">
+              <img src="./imgs/p4.png" alt="" />
+              <h1 class="font-[700] text-[18px] text-[white]">
+                Производство Москва
+              </h1>
+            </div>
+            <!-- pic5 -->
+            <div class="pic1 flex flex-col items-center gap-[10px]">
+              <img src="./imgs/p5.png" alt="" />
+              <h1 class="font-[700] text-[18px] text-[white]">
+                Производство Москва
+              </h1>
+            </div>
+            <!-- pic6 -->
+            <div class="pic1 flex flex-col items-center gap-[10px]">
+              <img src="./imgs/p6.png" alt="" />
+              <h1 class="font-[700] text-[18px] text-[white]">
+                Производство Москва
+              </h1>
+            </div>
+            <!-- pic7 -->
+            <div class="pic1 flex flex-col items-center gap-[10px]">
+              <img src="./imgs/p7.png" alt="" />
+              <h1 class="font-[700] text-[18px] text-[white]">
+                Производство Москва
+              </h1>
+            </div>
+            <!-- pic8 -->
+            <div class="pic1 flex flex-col items-center gap-[10px]">
+              <img src="./imgs/p8.png" alt="" />
+              <h1 class="font-[700] text-[18px] text-[white]">
+                Производство Москва
+              </h1>
+            </div>
+            <!-- pic9 -->
+            <div class="pic1 flex flex-col items-center gap-[10px]">
+              <img src="./imgs/p9.png" alt="" />
+              <h1 class="font-[700] text-[18px] text-[white]">
+                Производство Москва
+              </h1>
+            </div>
           </div>
-  
-
-
-         </div>
+        </div>
+        <!-- section_grid ended -->
       </div>
     </section>
+    <!-- last_section ended -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -578,7 +711,7 @@
       });
     </script>
     <script>
-      var swiper = new Swiper(".mySwiper2", {
+      var swiper2 = new Swiper(".mySwiper2", {
         pagination: {
           el: ".swiper-pagination",
         },
